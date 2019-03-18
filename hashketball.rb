@@ -1,15 +1,13 @@
 # Write your code here!
+require 'pry'
+
 def game_hash
   games = {
     :home => {
       :team_name => "Brooklyn Nets",
       :colors => ["Black", "White"],
       :players => {
-<<<<<<< HEAD
         "Alan Anderson" => {
-=======
-        :Alan_Anderson => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
         :number => 0,
         :shoe => 16,
         :points => 22,
@@ -19,11 +17,7 @@ def game_hash
         :blocks => 1,
         :slam_dunks => 1
       },
-<<<<<<< HEAD
         "Reggie Evans" => {
-=======
-        :Reggie_Evans => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
         :number => 30 ,
         :shoe => 14,
         :points => 12,
@@ -33,11 +27,7 @@ def game_hash
         :blocks => 12,
         :slam_dunks => 7
         },
-<<<<<<< HEAD
       "Brook Lopez" => {
-=======
-      :Brook_Lopez => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
       :number => 11,
       :shoe => 17,
       :points => 17,
@@ -47,11 +37,7 @@ def game_hash
       :blocks => 1,
       :slam_dunks => 15
     },
-<<<<<<< HEAD
     "Mason Plumlee" => {
-=======
-    :Mason_Plumlee => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
     :number => 1,
     :shoe => 19,
     :points => 26,
@@ -61,11 +47,7 @@ def game_hash
     :blocks => 8,
     :slam_dunks => 5
   },
-<<<<<<< HEAD
   "Jason Terry" => {
-=======
-  :Jason_Terry => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
   :number => 31,
   :shoe => 15,
   :points => 19,
@@ -79,11 +61,7 @@ def game_hash
   },
     :away => {
       :team_name => "Charlotte Hornets",
-<<<<<<< HEAD
       :colors => ["Turquoise", "Purple"],
-=======
-      :colors => ["Turqoise", "Purple"],
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
       :players => {
         "Jeff Adrien" => {
         :number => 4,
@@ -95,11 +73,7 @@ def game_hash
         :blocks => 7,
         :slam_dunks => 2
       },
-<<<<<<< HEAD
         "Bismak Biyombo" => {
-=======
-        :Bismak_Biyombo => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
         :number => 0 ,
         :shoe => 16,
         :points => 12,
@@ -109,11 +83,7 @@ def game_hash
         :blocks => 15,
         :slam_dunks => 10
         },
-<<<<<<< HEAD
       "DeSagna Diop" => {
-=======
-      :DeSagna_Diop => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
       :number => 2,
       :shoe => 14,
       :points => 24,
@@ -123,11 +93,7 @@ def game_hash
       :blocks => 5,
       :slam_dunks => 5
     },
-<<<<<<< HEAD
     "Ben Gordon" => {
-=======
-    :Ben_Gordon => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
     :number => 8,
     :shoe => 15,
     :points => 33,
@@ -137,11 +103,7 @@ def game_hash
     :blocks => 1,
     :slam_dunks => 0
   },
-<<<<<<< HEAD
   "Brendan Haywood" => {
-=======
-  :Brendan_Haywood => {
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
   :number => 33,
   :shoe => 15,
   :points => 6,
@@ -159,11 +121,11 @@ end
 
 def num_points_scored(name)
   game_hash.each do |location, info|
-<<<<<<< HEAD
     info.each do |info, player_name|
       if info == :players
         player_name.each do |player_name, player_data|
           if player_name == name
+            binding.pry
             return game_hash[location][info][player_name][:points]
           end
         end
@@ -255,13 +217,3 @@ def player_stats(name)
   end
       player
   end
-=======
-    info.each do |attribute, data|
-      if data.include?(name)
-        game_hash[location][attribute][name][:points]
-      end
-    end
-  end
-
-end
->>>>>>> 9e6597e57884cedd9717611b060e28e018232bc2
